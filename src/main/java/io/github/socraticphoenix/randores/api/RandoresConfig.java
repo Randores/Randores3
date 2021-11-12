@@ -6,4 +6,12 @@ public class RandoresConfig {
         return 300;
     }
 
+    public int maxOrePerChunk() {
+        return 300;
+    }
+
+    public int definitionThreshold() {
+        return 3000;
+    }
+
 }

@@ -28,10 +28,10 @@ import java.util.Random;
 
 public class RandoresProbability {
 
-    public static <T extends IRandoresWeighted> T randomWeighted(Collection<T> collection, Random random) {
+    public static <T extends IRandoresTestable> T randomWeighted(Collection<T> collection, Random random) {
         List<T> sub = new ArrayList<>();
         for (T t : collection) {
-            if (percentChance(t.chance(), random)) {
+            if (t.test(new Random(random.nextLong()))) {
                 sub.add(t);
             }
         }

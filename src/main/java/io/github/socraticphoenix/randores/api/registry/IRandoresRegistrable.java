@@ -1,6 +1,8 @@
 package io.github.socraticphoenix.randores.api.registry;
 
-public interface IRandoresRegistrable {
+import net.minecraftforge.registries.IForgeRegistryEntry;
+
+public interface IRandoresRegistrable<T> extends IForgeRegistryEntry<T> {
 
     String name();
 

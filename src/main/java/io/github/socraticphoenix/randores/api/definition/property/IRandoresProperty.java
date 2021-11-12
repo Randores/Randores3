@@ -1,6 +1,8 @@
 package io.github.socraticphoenix.randores.api.definition.property;
 
-public interface IRandoresProperty<T> {
+import io.github.socraticphoenix.randores.api.plugin.IRandoresOwned;
+
+public interface IRandoresProperty<T> extends IRandoresOwned {
 
     String name();
 
